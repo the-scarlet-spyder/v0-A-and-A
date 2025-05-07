@@ -27,14 +27,14 @@ export default function PeoplePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Leonard Anoka Card */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="w-full h-80 relative overflow-hidden">
+              <div className="w-full h-80 relative">
                 <Image
                   src="/images/Anoka.JPG"
                   alt="Leonard Anoka"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-lg"
+                  fill
                   sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-contain"
+                  priority
                 />
               </div>
               <div className="p-6">
@@ -101,14 +101,14 @@ export default function PeoplePage() {
                 key={index}
                 className="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <div className="w-full h-80 relative overflow-hidden">
+                <div className="w-full h-80 relative">
                   <Image
                     src={person.img}
                     alt={person.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-t-lg"
+                    fill
                     sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-contain"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">

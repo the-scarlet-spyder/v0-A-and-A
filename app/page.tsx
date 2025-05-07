@@ -1,7 +1,7 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-[#0B1F41]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/images/Team.JPG"
             alt="Law firm background"
             fill
             className="object-cover opacity-20"
@@ -18,7 +18,8 @@ export default function Home() {
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in">
-            SOLVING COMPLEX PROBLEMS AND HELPING INDUSTRY LEADERS BUILD A SUCCESSFUL COMMERCIAL FUTURE
+            SOLVING COMPLEX PROBLEMS AND HELPING INDUSTRY LEADERS BUILD A
+            SUCCESSFUL COMMERCIAL FUTURE
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8 text-gray-200 animate-fade-in-delay">
             Premier legal and insolvency consultancy firm
@@ -32,7 +33,9 @@ export default function Home() {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-serif font-bold text-[#0B1F41] mb-12">Our Clients</h2>
+          <h2 className="text-center text-3xl font-serif font-bold text-[#0B1F41] mb-12">
+            Our Clients
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
             {[
               "Access Bank Plc",
@@ -65,7 +68,9 @@ export default function Home() {
             ].map((client, index) => (
               <div key={index} className="text-center">
                 <div className="h-20 w-full bg-gray-100 rounded-md flex items-center justify-center px-4">
-                  <span className="font-medium text-gray-600 text-sm">{client}</span>
+                  <span className="font-medium text-gray-600 text-sm">
+                    {client}
+                  </span>
                 </div>
               </div>
             ))}
@@ -78,7 +83,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/Team (2).JPG"
                 alt="About Anoka & Associates"
                 width={600}
                 height={400}
@@ -86,16 +91,20 @@ export default function Home() {
               />
             </div>
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-serif font-bold text-[#0B1F41] mb-6">About Us</h2>
+              <h2 className="text-3xl font-serif font-bold text-[#0B1F41] mb-6">
+                About Us
+              </h2>
               <div className="w-20 h-1 bg-[#C9A24B] mb-6"></div>
               <p className="text-gray-700 mb-6">
-                We are a premier legal and insolvency consultancy firm with a reputation for excellence and integrity.
-                Established in 2005, we have grown to become one of the leading firms in Nigeria, serving clients across
-                various sectors.
+                We are a premier legal and insolvency consultancy firm with a
+                reputation for excellence and integrity. Established in 2005, we
+                have grown to become one of the leading firms in Nigeria,
+                serving clients across various sectors.
               </p>
               <p className="text-gray-700 mb-8">
-                Our team of experienced professionals combines deep legal knowledge with practical legal expertise to
-                deliver tailored solutions that meet our clients' specific needs and objectives.
+                Our team of experienced professionals combines deep legal
+                knowledge with practical legal expertise to deliver tailored
+                solutions that meet our clients' specific needs and objectives.
               </p>
               <Button
                 variant="outline"
@@ -111,11 +120,13 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif font-bold text-[#0B1F41] mb-4">Our Expertise</h2>
+            <h2 className="text-3xl font-serif font-bold text-[#0B1F41] mb-4">
+              Our Expertise
+            </h2>
             <div className="w-20 h-1 bg-[#C9A24B] mx-auto mb-6"></div>
             <p className="max-w-2xl mx-auto text-gray-700">
-              We offer comprehensive legal services across various practice areas to meet the diverse needs of our
-              clients.
+              We offer comprehensive legal services across various practice
+              areas to meet the diverse needs of our clients.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -162,7 +173,8 @@ export default function Home() {
               },
               {
                 title: "Matrimonial Causes & Adoption",
-                description: "Expert legal services for matrimonial causes and adoption processes.",
+                description:
+                  "Expert legal services for matrimonial causes and adoption processes.",
               },
             ].map((service, index) => (
               <div
@@ -173,7 +185,10 @@ export default function Home() {
                   {service.title}
                 </h3>
                 <p className="text-gray-700 mb-6">{service.description}</p>
-                <Link href="/expertise" className="text-[#C9A24B] font-medium flex items-center group-hover:underline">
+                <Link
+                  href="/expertise"
+                  className="text-[#C9A24B] font-medium flex items-center group-hover:underline"
+                >
                   Learn more
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
@@ -185,9 +200,12 @@ export default function Home() {
 
       <section className="py-20 bg-[#0B1F41] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-serif font-bold mb-6">Looking for expert legal counsel?</h2>
+          <h2 className="text-3xl font-serif font-bold mb-6">
+            Looking for expert legal counsel?
+          </h2>
           <p className="max-w-2xl mx-auto text-lg mb-8 text-gray-300">
-            We're ready to partner with you and provide the strategic guidance your business needs.
+            We're ready to partner with you and provide the strategic guidance
+            your business needs.
           </p>
           <Button className="bg-[#C9A24B] hover:bg-transparent hover:text-[#C9A24B] hover:border-[#C9A24B] border-2 border-transparent text-white px-8 py-6 rounded-md text-lg transition-all duration-300">
             Contact Us Today
@@ -195,5 +213,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
